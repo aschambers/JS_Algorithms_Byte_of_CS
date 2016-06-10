@@ -1,0 +1,19 @@
+<html>
+<head>
+	<title>iFibonacci</title>
+	<script>
+	function iFibonacci(n){
+		var fibs = [0, 1]
+		for(var i = 0; i <= n; i++){
+			fibs.push(fibs[0] + fibs[1]);
+			fibs.shift();
+		}
+		return fibs[0];
+	}
+	console.log(iFibonacci(5));
+	</script>
+</head>
+<body>
+
+</body>
+</html>
