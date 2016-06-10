@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title>Linear Search</title>
+	<script>
+	var arr = [24, 8, 23, 3];
+
+	function linearSearch(value, arr) {
+		for(var i = 0; i < arr.length; i++){
+			if(value == arr[i]){
+				return i;
+			} 
+			else {
+				continue;
+			}
+		}
+		return false;
+	}
+	console.log(arr);
+	console.log(linearSearch(23, arr)); // => 1
+	console.log(linearSearch(-99, arr)); // => false
+	</script>
+</head>
+<body>
+
+</body>
+</html>
