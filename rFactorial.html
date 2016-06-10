@@ -1,0 +1,22 @@
+<html>
+<head>
+	<title>rFactorial</title>
+	<script>
+	function rFactorial(value){
+		if(value <= 0){
+			return false;
+		}
+		else if(value === 1){
+			return 1;
+		}
+		else {
+			return value * rFactorial(value - 1);
+		}
+	}
+	console.log(rFactorial(5));
+	</script>
+</head>
+<body>
+
+</body>
+</html>
