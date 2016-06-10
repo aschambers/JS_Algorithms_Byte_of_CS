@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title>iSum</title>
+	<script>
+	function iSum(value){
+		var sum = 0;
+		for(var i = 0; i <= value; i++){
+			if(value <= 0){
+				return false;
+			}
+			else if(value >= 0){
+				sum += i;
+			}
+		}
+		return sum;
+	}
+	console.log(iSum(5));
+	</script>
+</head>
+<body>
+
+</body>
+</html>
