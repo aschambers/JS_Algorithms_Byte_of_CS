@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title>rFibonacci</title>
+	<script>
+	function rFibonacci(n){
+		var fibs = [0, 1];
+		if(n <= 0){
+			return false;
+		} else if(n === 1 || n === 2){
+			return 1;
+		} else {
+			return rFibonacci(n-1) + rFibonacci(n-2);
+		}
+	}
+	console.log(rFibonacci(6));
+	</script>
+</head>
+<body>
+
+</body>
+</html>
