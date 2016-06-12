@@ -1,0 +1,46 @@
+<html>
+<head>
+	<title>rBS</title>
+	<script>
+	function rBS(arr, x){
+		for(var i = 0; i < arr.length; i++){
+			if(arr[i] != x){
+				continue;
+			}
+			else if(arr[i] == x){
+				return i;
+			}
+		}
+		return -1;
+	}
+	console.log(rBS([-90,-19,0,2,12,29,33,190,320],33));
+	console.log(rBS([-90,-19,0,2,12,29,33,190,320],-20));
+
+
+
+
+
+	// function rBS(array, low, high, x){
+	// 	// base condition
+	// 	if(low > high) {
+	// 		return -1;
+	// 	}
+	// 	var mid = Math.floor(low + (high - low)/2);
+	// 	if(array[mid] == x){
+	// 		return mid;
+	// 	}
+	// 	else if(array[mid] > x){
+	// 		return rBS(array, low, mid-1, x);
+	// 	}
+	// 	else{
+	// 		return rBS(array, mid+1, high, x);
+	// 	}
+	// }
+	// console.log(rBS([-90,-19,0,2,12,29,33,190,320],0,8,33));
+	// console.log(rBS([-90,-19,0,2,12,29,33,190,320],0,8,-20));
+	</script>
+</head>
+<body>
+
+</body>
+</html>

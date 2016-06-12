@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title>iBS</title>
+	<script>
+	function rBS(n){
+		var arr = [-90,-19,0,2,12,29,33,190,320];
+		for(var i = 0; i < arr.length; i++){
+			if(n != arr[i]){
+				continue;
+			}
+			else if(n == arr[i]){
+				return i;
+			}
+		}
+		return false;
+	}
+	console.log(rBS(6));
+	console.log(rBS(320));
+	</script>
+</head>
+<body>
+
+</body>
+</html>

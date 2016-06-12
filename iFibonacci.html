@@ -3,14 +3,21 @@
 	<title>iFibonacci</title>
 	<script>
 	function iFibonacci(n){
-		var fibs = [0, 1]
-		for(var i = 0; i <= n; i++){
-			fibs.push(fibs[0] + fibs[1]);
-			fibs.shift();
+		var fib = [0, 1]
+		i = 2;
+		while(i <= n){
+			fib.push(fib[i - 1] + fib[i - 2]);
+			i++;
 		}
-		return fibs[0];
+		return fib[n];
+
+		// for(var i = 0; i <= n; i++){
+		// 	fibs.push(fibs[0] + fibs[1]);
+		// 	fibs.shift();
+		// }
+		// return fibs[0];
 	}
-	console.log(iFibonacci(5));
+	console.log(iFibonacci(6));
 	</script>
 </head>
 <body>
